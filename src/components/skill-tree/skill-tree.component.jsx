@@ -869,7 +869,7 @@ const SkillTreeComponent = ({
       setTotalAllocatedPoints(0);
 
       const className = window.location.pathname.split("/")[2];
-      const newURL = `${window.location.origin}/skill-tree/${className}`;
+      const newURL = `${process.env.PUBLIC_URL}/skill-tree/${className}`;
       window.history.replaceState(null, null, newURL);
     }
   }, [resetStatus]);

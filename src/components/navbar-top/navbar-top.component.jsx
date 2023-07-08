@@ -1,4 +1,5 @@
 import { React, useContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 import ClassSelectDropdown from "../class-select-dropdown/class-select-dropdown.component";
 import ResetButton from "../reset-button/reset-button.component";
@@ -7,6 +8,7 @@ import SearchComponent from "../search/search.component.jsx";
 import ShareButton from "../share-button/share-button.component";
 import HomeButton from "../home-button/home-button.component";
 import CodexDropdown from "../codex-dropdown/codex-dropdown.component";
+import roselrn from "../../assets/logos/rose-lrn.webp";
 
 import ClassSelectionContext from "../../contexts/class-selection.context";
 
@@ -57,6 +59,13 @@ const Navbar = ({
           isMobileMenuOpen ? "show" : ""
         }`}
       >
+        <Link
+          className="roselrn"
+          to={process.env.PUBLIC_URL}><img
+            src={roselrn}
+            alt="La Rosa Nera - Gilda italiana Multigaming"
+          />
+        </Link>
         <HomeButton />
         <CodexDropdown toggleClassInfo={toggleCodex} />
       </div>

@@ -1,0 +1,5 @@
+Options -MultiViews
+    RewriteBase /d4-build-calc/
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ /d4-build-calc/index.html [QSA,L]

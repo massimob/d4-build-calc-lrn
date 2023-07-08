@@ -589,3 +589,17 @@ ul::-webkit-scrollbar-button:start {
 ul::-webkit-scrollbar-button:end {
   background-image: url("./assets/frames/scroll-down-small.webp");
 }
+
+a.roselrn {
+  display: block;
+}
+
+a.roselrn img {
+  height: 50px;
+  margin-right: 1em;
+  
+}
+
+a.roselrn img:hover{
+  filter: drop-shadow(rgba(184, 0, 0, 0.7) 0px 0px 8px);
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import { generateJsonLdData } from "./data/json-ld-generator";
 
 //fonts
@@ -14,8 +14,11 @@ import SkillCalculator from "./components/skill-calculator/skill-calculator.comp
 import Footer from "./components/footer/footer.component";
 import ClassSkillsComponent from "./components/class-skills/class-skills.component";
 import AspectsComponent from "./components/aspects/aspects.component";
+import NotFound from "./components/notfound/notfound.component";
 
 import "./App.scss";
+
+
 
 const App = () => {
   const [selectedClass, setSelectedClass] = useState(null);
@@ -37,6 +40,7 @@ const App = () => {
         />
         <Route path="/codex/class-skills/" element={<ClassSkillsComponent />} />
         <Route path="/codex/aspects/" element={<AspectsComponent />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </ClassSelectionContext.Provider>
   );

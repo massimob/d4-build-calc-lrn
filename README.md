@@ -4,6 +4,17 @@ This project is a build calculator for the Diablo IV action-rpg video game made 
 
 The official site of the game can be found here -> [Official Site](https://diablo4.blizzard.com/en-us/#:~:text=Diablo%C2%AE%20IV%20is%20the,nightmarish%20dungeons%2C%20and%20legendary%20loot.)
 
+## Versions
+
+### 0.1.3
+
+- Al click condividi ora mostra un messaggio che indica che la build è stata copiata negli appunti
+- Modificata gestione dei separatori per l'url ora utilizza il . e il -
+
+### 0.1.2
+
+Versione base con aggiunta dei loghi LRN
+
 ## Technologies Used
 
 - React
